@@ -1,0 +1,142 @@
+[
+  {
+    "id": 1,
+    "name": "Burger Classique",
+    "price": 12.99,
+    "tags": ["burger", "boeuf", "fast-food"],
+    "image": "https://cdn.pixabay.com/photo/2023/05/29/17/01/hamburger-8026582_1280.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Pâtes Carbonara",
+    "price": 14.5,
+    "tags": ["pâtes", "italien", "crème"],
+    "image": "https://cdn.pixabay.com/photo/2015/04/08/13/13/pasta-712664_1280.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Salade César",
+    "price": 9.99,
+    "tags": ["salade", "léger", "végétal"],
+    "image": "https://cdn.pixabay.com/photo/2017/08/11/00/32/salad-2629262_1280.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Pizza Margherita",
+    "price": 13.5,
+    "tags": ["pizza", "italien", "fromage"],
+    "image": "http://cdn.pixabay.com/photo/2017/06/27/08/41/pizza-2446700_1280.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Poulet Rôti",
+    "price": 16.99,
+    "tags": ["poulet", "grillé", "protéines"],
+    "image": "https://cdn.pixabay.com/photo/2018/08/13/13/37/roasted-chicken-3602956_1280.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Tacos Poulet",
+    "price": 11.9,
+    "tags": ["tacos", "mexicain", "poulet"],
+    "image": "http://cdn.pixabay.com/photo/2019/09/28/16/55/tacos-4511272_1280.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Sushi Saumon",
+    "price": 18.0,
+    "tags": ["sushi", "japonais", "poisson"],
+    "image": "https://cdn.pixabay.com/photo/2015/02/02/19/31/sushi-621415_1280.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Ramen Miso",
+    "price": 15.2,
+    "tags": ["ramen", "japonais", "nouilles"],
+    "image": "https://cdn.pixabay.com/photo/2017/04/04/00/36/ramen-2199962_1280.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Steak Frites",
+    "price": 19.5,
+    "tags": ["viande", "français", "grill"],
+    "image": "https://cdn.pixabay.com/photo/2015/09/09/22/01/steak-933667_1280.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Couscous Royal",
+    "price": 17.8,
+    "tags": ["maghrébin", "semoule", "épicé"],
+    "image": "https://cdn.pixabay.com/photo/2016/07/08/10/18/couscous-1503949_1280.jpg"
+  },
+  {
+    "id": 11,
+    "name": "Lasagnes Bolognaise",
+    "price": 15.9,
+    "tags": ["italien", "pâtes", "boeuf"],
+    "image": "https://cdn.pixabay.com/photo/2017/02/15/15/17/meal-2069021_1280.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Quiche Lorraine",
+    "price": 10.9,
+    "tags": ["français", "tarte", "lardons"],
+    "image": "https://cdn.pixabay.com/photo/2016/08/08/21/52/quiche-1579383_1280.jpg"
+  },
+  {
+    "id": 13,
+    "name": "Pad Thaï Crevettes",
+    "price": 16.2,
+    "tags": ["thaï", "nouilles", "crevettes"],
+    "image": "https://cdn.pixabay.com/photo/2015/09/04/10/40/pad-thai-921884_1280.jpg"
+  },
+  {
+    "id": 14,
+    "name": "Risotto Champignons",
+    "price": 14.9,
+    "tags": ["italien", "riz", "végétarien"],
+    "image": "https://cdn.pixabay.com/photo/2021/02/04/12/48/food-5981246_1280.jpg"
+  },
+  {
+    "id": 15,
+    "name": "Falafel Bowl",
+    "price": 12.5,
+    "tags": ["végétarien", "oriental", "légumineuses"],
+    "image": "https://cdn.pixabay.com/photo/2017/08/24/15/41/clean-eating-2677200_1280.jpg"
+  },
+  {
+    "id": 16,
+    "name": "Saumon Teriyaki",
+    "price": 18.4,
+    "tags": ["poisson", "japonais", "sucré-salé"],
+    "image": "https://cdn.pixabay.com/photo/2015/04/08/13/13/food-712665_1280.jpg"
+  },
+  {
+    "id": 17,
+    "name": "Burrito Boeuf",
+    "price": 13.8,
+    "tags": ["mexicain", "boeuf", "riz"],
+    "image": "https://cdn.pixabay.com/photo/2017/06/29/20/09/mexican-2456038_1280.jpg"
+  },
+  {
+    "id": 18,
+    "name": "Curry Indien Végétarien",
+    "price": 13.4,
+    "tags": ["indien", "curry", "végétarien"],
+    "image": "https://cdn.pixabay.com/photo/2019/08/15/10/46/curry-4407744_1280.jpg"
+  },
+  {
+    "id": 19,
+    "name": "Moules Marinières",
+    "price": 17.2,
+    "tags": ["fruits de mer", "français", "poisson"],
+    "image": "https://cdn.pixabay.com/photo/2015/03/17/18/48/mussels-in-bath-678142_1280.jpg"
+  },
+  {
+    "id": 20,
+    "name": "Gnocchis Sauce Pesto",
+    "price": 14.2,
+    "tags": ["italien", "gnocchis", "basilic", "poisson"],
+    "image": "https://cdn.pixabay.com/photo/2017/04/05/22/31/pasta-2206601_1280.jpg"
+  }
+]
