@@ -1,4 +1,4 @@
-function SearchInput({ icon, placeholder, type = "text" }) {
+function SearchInput({ icon, placeholder, type = "text", value, onChange }) {
   return (
     <section className="card shadow-sm">
       <div className="card-body p-2">
@@ -8,6 +8,8 @@ function SearchInput({ icon, placeholder, type = "text" }) {
             type={type}
             className="form-control"
             placeholder={placeholder}
+            value={value}
+            onChange={onChange}
           />
         </div>
       </div>

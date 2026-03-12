@@ -3,9 +3,17 @@ import Nav from "./components/Nav";
 import SideBar from "./components/SideBar";
 import Card from "./components/Card";
 import Footer from "./components/Footer";
+import plates from "./data/plates.json";
+import { FilterProvider } from "./context/FilterContext";
+import { CartProvider } from "./context/CartContext";
+import { useFilters } from "./hooks/useFilters.jsx";
 import "./App.css";
 
-function App() {
+function AppContent() {
+  const { getFilteredPlates } = useFilters();
+
+  const filteredPlates = getFilteredPlates(plates);
+
   return (
     <div className="app">
       <Header />
@@ -16,12 +24,22 @@ function App() {
             <SideBar />
           </aside>
           <main className="col-12 col-lg-9 col-xl-10">
-            <Card />
+            <Card plates={filteredPlates} />
           </main>
         </div>
       </div>
       <Footer />
     </div>
+  );
+}
+
+function App() {
+  return (
+    <FilterProvider>
+      <CartProvider>
+        <AppContent />
+      </CartProvider>
+    </FilterProvider>
   );
 }
 

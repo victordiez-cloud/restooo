@@ -1,7 +1,15 @@
-import plates from "../data/plates.json";
 import Button from "./Button";
+import { useFilters } from "../hooks/useFilters.jsx";
+import { useCart } from "../hooks/useCart.jsx";
 
-function Card() {
+function Card({ plates }) {
+  const { selectedTag, setSelectedTag } = useFilters();
+  const { state, addItem, removeItem } = useCart();
+
+  function handleTagClick(tag) {
+    setSelectedTag(selectedTag === tag ? null : tag);
+  }
+
   return (
     <div className="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-3">
       {plates.map((plate) => (
@@ -19,14 +27,28 @@ function Card() {
                 {plate.tags.slice(0, 3).map((tag) => (
                   <span
                     key={tag}
-                    className="badge text-bg-light border text-secondary fw-normal"
+                    role="button"
+                    className={`badge border fw-normal ${selectedTag === tag ? "text-bg-secondary" : "text-bg-light text-secondary"}`}
+                    onClick={() => handleTagClick(tag)}
                   >
                     {tag}
                   </span>
                 ))}
               </div>
 
-              <Button label="Ajouter au panier" />
+              <div className="d-flex gap-2">
+                <Button
+                  label="Ajouter au panier"
+                  onClick={() => addItem(plate)}
+                />
+                {state.items.some((item) => item.id === plate.id) && (
+                  <Button
+                    label="Retirer"
+                    variant="btn-outline-danger"
+                    onClick={() => removeItem(plate.id)}
+                  />
+                )}
+              </div>
             </div>
           </div>
         </article>
